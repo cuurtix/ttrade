@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age des Tribus — Prototype RTS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Age des Tribus</h1>
+      <p>Prototype inspiré par les mécaniques de stratégie temps réel de 0 A.D.</p>
+    </header>
+
+    <main>
+      <section class="hud">
+        <h2>Ressources</h2>
+        <div class="resources">
+          <div>🌲 Bois : <span id="wood">120</span></div>
+          <div>🍖 Nourriture : <span id="food">90</span></div>
+          <div>⛏️ Métal : <span id="metal">45</span></div>
+          <div>⭐ Prestige : <span id="prestige">0</span></div>
+        </div>
+      </section>
+
+      <section class="actions">
+        <h2>Bâtiments</h2>
+        <button id="build-lumber">Construire une scierie (50 bois)</button>
+        <button id="build-farm">Construire une ferme (40 bois)</button>
+        <button id="build-mine">Construire une mine (35 bois, 20 nourriture)</button>
+
+        <h2>Armée</h2>
+        <button id="train-villager">Former un villageois (30 nourriture)</button>
+        <button id="train-warrior">Former un guerrier (25 nourriture, 15 métal)</button>
+        <button id="raid">Lancer un raid</button>
+      </section>
+
+      <section class="status">
+        <h2>Population</h2>
+        <div>👷 Villageois : <span id="villagers">3</span></div>
+        <div>🛡️ Guerriers : <span id="warriors">1</span></div>
+        <div>🏗️ Scieries : <span id="lumbermills">0</span></div>
+        <div>🌾 Fermes : <span id="farms">0</span></div>
+        <div>⛏️ Mines : <span id="mines">0</span></div>
+
+        <h2>Journal</h2>
+        <ul id="log"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Astuce: gérez votre économie, entraînez des guerriers, et accumulez du prestige via les raids.
+      </p>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>

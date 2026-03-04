@@ -1,0 +1,72 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2f4a2f 0%, #1d2b1d 45%, #111 100%);
+  color: #f0e7d3;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  background: rgba(35, 25, 12, 0.65);
+  border: 1px solid #7d663e;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.resources {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 1.05rem;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 0.6rem;
+  border: 1px solid #9d7e46;
+  background: linear-gradient(180deg, #8c6f3d, #6d522a);
+  color: #fff8e5;
+  padding: 0.55rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+#log {
+  margin: 0;
+  padding-left: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.92rem;
+}
